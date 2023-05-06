@@ -42,7 +42,7 @@ struct OrdersPage: View {
                                     Spacer()
                                     Text("Total")
                                     Spacer()
-//                                    Text("$ \(cartManager.total(), specifier: "%.2f")")
+                                    Text("$ \(cartManager.total(), specifier: "%.2f")")
                                         .bold()
                                     Spacer()
                                 }

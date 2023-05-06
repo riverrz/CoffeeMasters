@@ -20,4 +20,12 @@ class CartManager: ObservableObject {
             return itemInCart.0.id == product.id
         }
     }
+    
+    func total() -> Double {
+        var total: Double = 0
+        for item in cart {
+            total += Double(item.1) * item.0.price
+        }
+        return total
+    }
 }
